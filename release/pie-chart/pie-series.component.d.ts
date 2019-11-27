@@ -16,6 +16,7 @@ export declare class PieSeriesComponent implements OnChanges {
     tooltipDisabled: boolean;
     tooltipTemplate: TemplateRef<any>;
     animations: boolean;
+    showSum: boolean;
     select: EventEmitter<{}>;
     activate: EventEmitter<{}>;
     deactivate: EventEmitter<{}>;
@@ -36,4 +37,5 @@ export declare class PieSeriesComponent implements OnChanges {
     trackBy(index: any, item: any): string;
     onClick(data: any): void;
     isActive(entry: any): boolean;
+    sum(): string;
 }
